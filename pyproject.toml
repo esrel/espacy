@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools >= 75.8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "espacy"
+version = "0.1.0"
+authors = [
+    { name = "Evgeny A. Stepanov", email = "stepanov.evgeny.a@gmail.com" },
+]
+description = "spaCy extensions"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Programming Language :: Python :: 3.10',
+    'Topic :: Scientific/Engineering :: Artificial Intelligence',
+    'Intended Audience :: Science/Research'
+]
+license = "GPL-3.0-or-later"
+license-files = ["LICEN[CS]E*"]
+dependencies = [
+    "ematcher>=0.36.0",
+    "setuptools>=75.8.0",
+    "spacy~=3.8.14",
+    "en_core_web_md",
+]
+
+[tool.uv.sources]
+en_core_web_md = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl" }
+
+[project.urls]
+Homepage = "https://github.com/esrel/ematcher"
+Issues = "https://github.com/esrel/ematcher/issues"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+include-package-data = true
