@@ -30,8 +30,8 @@ dependencies = [
 en_core_web_md = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl" }
 
 [project.urls]
-Homepage = "https://github.com/esrel/ematcher"
-Issues = "https://github.com/esrel/ematcher/issues"
+Homepage = "https://github.com/esrel/espacy"
+Issues = "https://github.com/esrel/espacy/issues"
 
 [tool.setuptools]
 package-dir = { "" = "src" }
