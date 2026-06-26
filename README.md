@@ -1,2 +1,2 @@
-# espacy
-spaCy extensions
+# e-spaCy: spaCy extensions
+
